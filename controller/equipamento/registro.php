@@ -4,7 +4,7 @@ require_once('../../db_connection.php');
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $nome = $_POST['nome'];
-    $precoAquisicao = $_POST['preco_aquisicao'];
+    $precoAquisicao = str_replace('R$ ', '', $_POST['preco_aquisicao']);
     $numeroSerie = $_POST['numero_serie'];
     $dataFabricacao = $_POST['data_fabricacao'];
     $fabricante = $_POST['fabricante'];
