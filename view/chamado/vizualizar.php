@@ -37,8 +37,8 @@
                         foreach ($chamados as $chamado) {
                             echo '<tr>';
                             echo '<td>' . $chamado->getTitulo() . '</td>';
-                            echo '<td>' . $chamado->nomeEquipamento . '</td>'; // Usa a propriedade direta nomeEquipamento
-                            echo '<td>' . $chamado->getDataAbertura() . '</td>';
+                            echo '<td>' . $chamado->nomeEquipamento . '</td>';
+                            echo '<td>' . date('d/m/Y', strtotime($chamado->getDataAbertura())) . '</td>';
                             echo '<td>' . calcularDiasAberto($chamado->getDataAbertura()) . '</td>';
                             echo '<td>';
                             echo '<a href="' . '../../view/chamado/editar.php?id=' . $chamado->getId() . '" class="btn btn-primary btn-sm">Editar</a>';
@@ -63,6 +63,7 @@
                 </table>
                 <div class="mt-3">
                     <a href="../../view/chamado/registrar.php"  class="btn btn-success">Cadastrar Novo Chamado</a>
+                    <a href="javascript:history.back()" class="btn btn-secondary">Voltar</a>
                 </div>
             </div>
         </div>
