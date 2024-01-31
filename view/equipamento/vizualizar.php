@@ -52,6 +52,7 @@
                 </table>
                 <div class="mt-3">
                     <a href="../../view/equipamento/registrar.php"  class="btn btn-success">Cadastrar Novo Equipamento</a>
+                    <a href="javascript:history.back()" class="btn btn-secondary">Voltar</a>
                 </div>
             </div>
         </div>

@@ -45,7 +45,8 @@
                         echo '<label for="data_abertura">Data de Abertura: </label>';
                         echo '<input type="date" class="form-control" name="data_abertura" id="data_abertura" value="' . $chamado->getDataAbertura() . '" required>';
                         echo '</div>';
-                        echo '<button type="submit" class="btn btn-primary btn-block">Salvar Edições</button>';
+                        echo '<button type="submit" class="btn btn-primary mr-1">Salvar</button>';
+                        echo '<a href="javascript:history.back()" class="btn btn-secondary">Voltar</a>';
                         echo '</form>';
                     } else {
                         echo 'Chamado não encontrado.';

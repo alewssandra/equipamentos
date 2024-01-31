@@ -52,7 +52,8 @@
                         echo '<label for="fabricante">Fabricante: </label>';
                         echo '<input id="fabricante" type="text" class="form-control" name="fabricante" value="' . $equipamento->getFabricante() . '" required>';
                         echo '</div>';
-                        echo '<button type="submit" class="btn btn-primary btn-block">Salvar Edições</button>';
+                        echo '<button type="submit" class="btn btn-primary mr-1">Salvar</button>';
+                        echo '<a href="javascript:history.back()" class="btn btn-secondary">Voltar</a>';
                         echo '</form>';
                     } else {
                         echo 'Equipamento não encontrado.';

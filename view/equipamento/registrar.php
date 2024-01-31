@@ -43,7 +43,9 @@
                         <input id="fabricante" type="text" class="form-control" name="fabricante" required>
                     </div>
 
-                    <button type="submit" class="btn btn-primary btn-block">Registrar Equipamento</button>
+                    <button type="submit" class="btn btn-primary mr-1">Registrar</button>
+                    <a href="javascript:history.back()" class="btn btn-secondary">Voltar</a>
+
                 </form>
             </div>
         </div>

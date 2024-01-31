@@ -50,7 +50,8 @@
                         <input id="data_abertura" type="date" class="form-control" name="data_abertura" required>
                     </div>
 
-                    <button type="submit" class="btn btn-primary btn-block">Registrar Chamado</button>
+                    <button type="submit" class="btn btn-primary mr-1">Registrar Chamado</button>
+                    <a href="javascript:history.back()" class="btn btn-secondary">Voltar</a>
                 </form>
             </div>
         </div>
